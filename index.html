@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#001c19">
+
+<title>KARTIK BHAI</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3077706725903597');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3077706725903597&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+    background: #001c19;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 12px;
+    overflow-x: hidden;
+    background:
+        radial-gradient(ellipse at 50% 40%, #00352d 0%, #001c19 65%, #001613 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* MAIN CARD */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    min-height: 504px;
+    padding: 20px 14px 17px;
+    border: 1px solid rgba(0,255,190,.30);
+    border-radius: 23px;
+    background: linear-gradient(
+        145deg,
+        rgba(4,28,32,.98),
+        rgba(2,24,29,.98)
+    );
+    box-shadow:
+        0 0 25px rgba(0,255,170,.10),
+        inset 0 0 20px rgba(0,255,170,.025);
+    text-align: center;
+    animation: cardAppear .9s ease both;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* LOGO */
+
+.logo-box {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #00ffc3;
+    box-shadow:
+        0 0 9px #00ffc3,
+        0 0 20px rgba(0,255,195,.55),
+        0 0 35px rgba(0,255,195,.20);
+    animation: logoGlow 2s infinite ease-in-out;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #001b18;
+}
+
+@keyframes logoGlow {
+    0%,100% {
+        box-shadow: 0 0 9px #00ffc3,0 0 20px rgba(0,255,195,.45);
+    }
+    50% {
+        box-shadow: 0 0 15px #00ffc3,0 0 32px rgba(0,255,195,.75);
+    }
+}
+
+/* TOP BADGE */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 7px 13px;
+    border: 1px solid rgba(0,255,190,.45);
+    border-radius: 30px;
+    background: rgba(0,255,180,.06);
+    color: #00ffc0;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    margin-bottom: 15px;
+}
+
+.badge-icon {
+    font-size: 10px;
+}
+
+/* HEADLINE */
+
+h1 {
+    font-size: 27px;
+    line-height: 1.12;
+    font-weight: 1000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: -.6px;
+}
+
+h1 .first {
+    display: block;
+    color: #ffffff;
+}
+
+h1 .second {
+    display: block;
+    color: #00e9b0;
+    margin-top: 3px;
+    text-shadow: 0 0 15px rgba(0,255,190,.15);
+}
+
+/* COMMUNITY TEXT */
+
+.community {
+    color: #00ffc0;
+    font-size: 11.5px;
+    font-weight: 900;
+    letter-spacing: .15px;
+    margin-bottom: 9px;
+    white-space: nowrap;
+}
+
+.description {
+    color: #d0e2e2;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 17px;
+}
+
+/* JOIN BUTTON */
+
+.join-btn {
+    position: relative;
+    width: 100%;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border-radius: 17px;
+    text-decoration: none;
+    color: #001d1b;
+    background: linear-gradient(105deg,#00ed9c,#00d5db);
+    font-size: 14px;
+    font-weight: 1000;
+    letter-spacing: .1px;
+    box-shadow: 0 0 20px rgba(0,255,180,.15);
+    overflow: hidden;
+    transition: transform .25s ease;
+    animation: buttonGlow 2s infinite ease-in-out;
+}
+
+.join-btn:hover {
+    transform: scale(1.025);
+}
+
+.join-btn:active {
+    transform: scale(.96);
+}
+
+.join-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.28),
+        transparent
+    );
+    animation: shine 3s infinite;
+}
+
+.join-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    55%,100% { left: 150%; }
+}
+
+@keyframes buttonGlow {
+    0%,100% {
+        box-shadow: 0 0 15px rgba(0,255,180,.13);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(0,255,180,.30);
+    }
+}
+
+/* ACCESS TEXT */
+
+.access-text {
+    color: #00e9e9;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .7px;
+    margin-top: 14px;
+}
+
+.ready-text {
+    color: #00ffb2;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: .8px;
+    margin-top: 10px;
+}
+
+/* DIVIDER */
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(160,210,200,.20);
+    margin: 20px 0 20px;
+}
+
+/* BOTTOM FEATURES */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+
+.feature strong {
+    display: block;
+    color: #00f5bd;
+    font-size: 18px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.feature span {
+    display: block;
+    color: #c2d7d8;
+    font-size: 8px;
+    letter-spacing: .4px;
+}
+
+/* SMALL SCREEN */
+
+@media(max-width:350px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .community {
+        font-size: 10px;
+    }
+
+    .join-btn {
+        font-size: 12px;
+    }
+}
+
+/* SHORT MOBILE SCREEN */
+
+@media(max-height:620px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        margin: 5px auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+    <!-- PROFILE LOGO -->
+    <div class="logo-box">
+        <img
+        src="https://www.image2url.com/r2/default/images/1795499354969-e402aa07-aafd-4179-adad-8201c54e7c0a.png"
+        alt="Kartik Bhai Logo">
+    </div>
+
+    <!-- BADGE -->
+    <div class="badge">
+        <span class="badge-icon">⬡</span>
+        COMMUNITY &amp; STRATEGY
+    </div>
+
+    <!-- HEADLINE -->
+    <h1>
+        <span class="first">WELCOME TO</span>
+        <span class="second">KARTIK BHAI</span>
+    </h1>
+
+    <!-- COMMUNITY -->
+    <div class="community">
+        🔥 JOIN OUR VIP TELEGRAM COMMUNITY 🔥
+    </div>
+
+    <p class="description">
+        Market Trends • Strategy Discussions • Daily Updates
+    </p>
+
+    <!-- TELEGRAM JOIN BUTTON -->
+    <a
+        class="join-btn"
+        href="https://t.me/+sRvT4Jo-p602M2I1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <span>➤ &nbsp; JOIN VIP CHANNEL &nbsp;→</span>
+    </a>
+
+    <!-- ACCESS TEXT -->
+    <div class="access-text">
+        ⚡ INSTANT ACCESS • FREE COMMUNITY
+    </div>
+
+    <div class="ready-text">
+        ⚡ READY TO JOIN • TAP ABOVE
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+
+    <!-- BOTTOM FEATURES -->
+    <div class="features">
+
+        <div class="feature">
+            <strong>24/7</strong>
+            <span>COMMUNITY</span>
+        </div>
+
+        <div class="feature">
+            <strong>VIP</strong>
+            <span>ACCESS</span>
+        </div>
+
+        <div class="feature">
+            <strong>LIVE</strong>
+            <span>UPDATES</span>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
